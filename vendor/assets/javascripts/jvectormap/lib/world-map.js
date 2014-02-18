@@ -911,16 +911,6 @@ jvm.WorldMap.prototype = {
     this.container.remove();
     jvm.$(window).unbind('resize', this.onResize);
   }
-
-  /**
-   * Gracefully empty the map container and unbind event handlers.
-   */
-  empty: function(){
-    this.label.remove();
-    jvm.$(window).unbind('resize', this.onResize);
-  }
-
-  
 };
 
 jvm.WorldMap.maps = {};
